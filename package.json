@@ -1,0 +1,52 @@
+{
+  "name": "multi-selection-replace",
+  "displayName": "Multi Selection Replace",
+  "description": "Replace all the selections of text with the result of an expression.",
+  "version": "1.0.0",
+  "publisher": "valerioio",
+  "repository": {
+    "url": "https://github.com/valerioio/multi-selection-replace"
+  },
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:multi-selection-replace.multiSelectionReplace"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "multi-selection-replace.multiSelectionReplace",
+        "title": "Multi Selection Replace"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "multi-selection-replace.multiSelectionReplace",
+        "key": "ctrl+alt+m",
+        "mac": "cmd+alt+m",
+        "when": "editorFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.73.0",
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "eslint": "^8.28.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.3",
+    "@vscode/test-electron": "^2.2.0"
+  }
+}
