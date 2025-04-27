@@ -2,7 +2,7 @@
   "name": "multi-selection-replace",
   "displayName": "Multi Selection Replace",
   "description": "Replace all the selections of text with the result of an expression.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "publisher": "valerioio",
   "repository": {
     "url": "https://github.com/valerioio/multi-selection-replace"
